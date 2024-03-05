@@ -19,7 +19,7 @@ variable "i_type" {
 variable "ec2_1_tag" {
   type        = string
   description = "tag for ec2"
-  default     = "MadebyFermaonTuesday"
+  default     = "sshtest3"
 }
 
 variable "sub1_cidr" {
