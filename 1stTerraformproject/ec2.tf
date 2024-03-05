@@ -1,4 +1,4 @@
-resource "aws_instance" "fermec2" {
+resource "aws_instance" "sshtest3" {
   ami           = "var.ami_id"
   instance_type = "var.i_type"
 
