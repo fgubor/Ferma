@@ -79,11 +79,10 @@ variable "vpc_tag" {
   type        = string
   description = "vpc tag info"
   default     = "MrsGuborVPC-terraform"
-
+}
 
 variable "key_name" {
   type        = string
   description = "key pair"
   default     = "Gubor_pem"
-
 }
