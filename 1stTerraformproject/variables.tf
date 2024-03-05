@@ -7,7 +7,7 @@ variable "region" {
 variable "ami_id" {
   type        = string
   description = "ami id for us-east-1"
-  default     = "ami-0e731c8a588258d0d"
+  default     = "ami-07d9b9ddc6cd8dd30"
 }
 
 variable "i_type" {
@@ -46,6 +46,21 @@ variable "sub2_tag" {
   default     = "Terraformsub2"
 }
 
+variable "sg_name" {
+  type        = string
+  description = "install1_sg"
+}
+
+variable "sg_desc" {
+  type        = string
+  description = "security group for vpc"
+}
+
+variable "ssh_desc" {
+  type        = string
+  description = "security group description of ssh rule"
+}
+
 variable "vpc_cidr" {
   type        = string
   description = "cidr block for ec2"
@@ -61,5 +76,12 @@ variable "tenancy" {
 variable "vpc_tag" {
   type        = string
   description = "vpc tag info"
-  default     = "Fermavpc"
+  default     = "MrsGuborVPC-terraform"
+
+
+variable "key_name" {
+  type        = string
+  description = "key pair"
+  default     = "Gubor_pem"
+
 }
