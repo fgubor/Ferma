@@ -48,7 +48,8 @@ variable "sub2_tag" {
 
 variable "sg_name" {
   type        = string
-  description = "install1_sg"
+  description = "tag for security group"
+  default     = "intall1_sg"
 }
 
 variable "sg_desc" {
@@ -58,7 +59,8 @@ variable "sg_desc" {
 
 variable "ssh_desc" {
   type        = string
-  description = "security group description of ssh rule"
+  description = "ssh port"
+  default     = 22
 }
 
 variable "vpc_cidr" {
