@@ -1,5 +1,5 @@
 resource "aws_subnet" "subl" {
-  vpc_id     = aws_vpc.Randa.id
+  vpc_id     = aws_vpc.MrsGuborVPC-terraform.id
   cidr_block = var.sub1_cidr
 
   tags = {
@@ -8,7 +8,7 @@ resource "aws_subnet" "subl" {
 }
 
 resource "aws_subnet" "sub2" {
-  vpc_id     = aws_vpc.Randa.id
+  vpc_id     = aws_vpc.MrsGuborVPC-terraform.id
   cidr_block = var.sub2_cidr
 
   tags = {
